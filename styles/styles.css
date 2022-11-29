@@ -10,6 +10,7 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--primary-background-color);
     color: var(--primary-color-text);
     font-family: Roboto, sans-serif;
@@ -20,7 +21,6 @@ body {
 .section-title {
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
 }
 
 li {
@@ -44,11 +44,30 @@ li {
     margin: -1px;
 }
 
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
+    
+}
+
 /* Header */
 
 .header {
     background-color: var(--secondary-background-color);
 }
+
 
 .logo {
     color: #000000;
@@ -99,6 +118,14 @@ li {
 .hero-section {
     background-color: var(--hero-footer-background-color);
     letter-spacing: 0.0em;
+    text-align: center;
+    margin-bottom: 94px;
+}
+
+.hero-section .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 
 .hero-title{
@@ -106,7 +133,6 @@ li {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -120,6 +146,11 @@ li {
 }
 
 /* description */
+
+.description {
+    margin-bottom: 94px;
+}
+
 .description-title {
     font-size: 14px;
     line-height: 1.14;
@@ -132,13 +163,34 @@ li {
     line-height: 1.71;
 }
 
+/* Doing */
+
+.doing-selection {
+    margin-bottom: 94px;
+    text-align: center;
+}
+
 /* Command */
+.command .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
 .command {
     background-color: var(--command-button-background-color);
 }
 
+.command .section-title {
+    margin-bottom: 50px;
+}
+
 .card {
     background-color: var(--secondary-background-color);
+}
+
+.command-img {
+    margin-bottom: 30px;
 }
 
 .command-title {
@@ -146,6 +198,7 @@ li {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .command-subtitle {
@@ -154,6 +207,7 @@ li {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 /* Footer */
@@ -171,6 +225,11 @@ li {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
