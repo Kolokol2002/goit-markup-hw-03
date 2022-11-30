@@ -242,11 +242,9 @@ p {
 
 /* portfilio */
 
-.header {
-    margin-bottom: 94px;
-}
 
 .portfolio-section {
+    margin-top: 94px;
     margin-bottom: 94px;
 }
 .portfolio-section .container:first-child {
