@@ -7,6 +7,8 @@
     --command-button-background-color: #F5F4FA;
 }
 
+
+
 body {
     margin: 0;
     background-color: var(--primary-background-color);
@@ -14,7 +16,6 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-
 
 .section-title {
     font-size: 36px;
@@ -58,15 +59,27 @@ p {
     margin: 0 auto;
     padding: 0 15px;
     outline: 1px solid tomato;
-    
 }
 
-/* Header */
 
+/* Header */
 .header {
     background-color: var(--primary-background-color);
 }
 
+.header .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header .container {
+    display: flex;
+}
+
+.nav-main {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
 
 .logo {
     color: #000000;
@@ -74,12 +87,18 @@ p {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px;
     
 }
 
 .first-text-logo{
     color: var(--accent-color-text);
     font-family: Raleway, sans-serif;
+
+}
+
+.nav-list {
+    display: flex;
 
 }
 
@@ -93,6 +112,13 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-adress {
+    display: flex;
+    align-items: center;
 }
 
 .address.link {
@@ -102,6 +128,8 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .link:hover,
@@ -110,8 +138,8 @@ p {
 }
 
 
-
 /* Main block */
+
 
 /* Hero */
 .hero-section {
@@ -136,29 +164,34 @@ p {
 }
 
 .hero-button{
-    /* display: inline-block; */
     background-color: var(--accent-color-text);
     color: var(--primary-background-color);
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* min-width: 216px;
-    min-height: 50px;
-    border-radius: 4px; */
-
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
-/* description */
 
+/* Description */
 .description {
     margin-bottom: 94px;
+}
+
+.description-list {
+    display: flex;
+}
+
+.description-list .item.item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .description-title {
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .description-subtitle {
@@ -167,12 +200,13 @@ p {
     line-height: 1.71;
 }
 
-/* Doing */
 
+/* Doing */
 .doing-selection {
     margin-bottom: 94px;
     text-align: center;
 }
+
 
 /* Command */
 .command-selection .container {
@@ -215,6 +249,7 @@ p {
     padding-bottom: 30px;
 }
 
+
 /* Footer */
 .footer {
     background-color: var(--hero-footer-background-color);
@@ -240,9 +275,9 @@ p {
 
 /* PORTFOLIO */
 
+
+
 /* portfilio */
-
-
 .portfolio-section {
     margin-top: 94px;
     margin-bottom: 94px;
